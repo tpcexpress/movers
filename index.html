@@ -15,8 +15,8 @@
 	<header>
 		<img src="http://www.tpcexpress.info/img/tpcexpress-small-logo.jpg" alt="tpcexpress small logo" />
 		<h1>TPC Movers</h1>
-		<a href="tel:+357 96 775155" title="Tel: +357 96 775155"><span>&#9742; Call Us Now</span><br />+357 96 775155</a>
-		
+		<!--<a href="tel:+357 96 775155" title="Tel: +357 96 775155"><span>&#9742; Call Us Now</span><br />+357 96 775155</a>-->
+
 	</header>
 	<section>
 		<nav>
@@ -33,26 +33,28 @@
 	<div class="wrapper">
 		<main>
 			<article>
-				<h3>OFFICE REMOVALS</h3>
+				<h3>OFFICE RELOCATION</h3>
 				<p>TPC MOVERS team have the expertise and flexibility to handle every aspect of your office move efficiently and with minimum downtime for your business.</p>
-				<p>No matter whether you are moving to a bigger office across town, relocating to another part of Cyprus or even relocating abroad – we provide a comprehensive office removals service that can be tailored to suit your individual requirements.</p>
-				<p>We understand that moving office can be a complicated process, that’s why we are committed to delivering excellent service and value for money, and this includes limiting the amount of disruption to your office and staff.</p>
+				<a class="first-column" onclick="readMore(event)" style="display: inline-block;">[Read More..]</a>
+				<p class="first-column"  style="display: none;">No matter whether you are moving to a bigger office across town, relocating to another part of Cyprus or even relocating abroad – we provide a comprehensive office removals service that can be tailored to suit your individual requirements.</p>
+				<p class="first-column"  style="display: none;">We understand that moving office can be a complicated process, that’s why we are committed to delivering excellent service and value for money, and this includes limiting the amount of disruption to your office and staff.</p>
 			</article>
 			<article>
-				<h3>NATIONAL REMOVALS</h3>
+				<h3>HOME RELOCATION</h3>
 				<p>We provide a complete door-to-door removals service for moving all your entire household items . Quite simply, this means we take care of every aspect of your move until you have moved in and settled in to your home.</p>
-				<p>Whether you are moving to same city or another city, your dedicated move coordinator will organise the packing, loading, transit, unloading and delivery of your belongings through our in-house teams . You just have to tell us what you want to take, and we take care of the rest.</p>
-				<p>You can choose our full services or only certain segments as needed.</p>
-				<p>TPC MOVERS moving services make the removals process easy, wherever you’re moving to.</p>
+				<a class="second-column" onclick="readMore(event)" style="display: inline-block;">[Read More..]</a>
+				<p class="second-column" style="display: none;">Whether you are moving to same city or another city, your dedicated move coordinator will organise the packing, loading, transit, unloading and delivery of your belongings through our in-house teams . You just have to tell us what you want to take, and we take care of the rest.</p>
+				<p class="second-column" style="display: none;">You can choose our full services or only certain segments as needed.</p>
+				<p class="second-column" style="display: none;">TPC MOVERS moving services make the removals process easy, wherever you’re moving to.</p>
 			</article>
 			<article>
-				<h3>INTERNATIONAL REMOVALS</h3>
+				<h3>INTERNATIONAL RELOCATION</h3>
 				<p>We provide a complete door-to-door removals service for moving all your entire household items overseas . Quite simply, this means we take care of every aspect of your move until you have moved in and settled in to your home.</p>
-				<p>Your dedicated move coordinator will organise the packing, storage, shipping / transit, and delivery of your belongings through our in-house teams and trusted partners. You just have to tell us what you want to take, and we take care of the rest – everything from customs clearance to unpacking in your new home.</p>
-				<p>TPC MOVERS services make the removals process easy, wherever you’re moving to.</p>
-			  <p>For more moving services information or a free cost estimation please contact us.</p>
+				<a class="third-column" onclick="readMore(event)" style="display: inline-block;">[Read More..]</a>
+				<p class="third-column" style="display: none;">Your dedicated move coordinator will organise the packing, storage, shipping / transit, and delivery of your belongings through our in-house teams and trusted partners. You just have to tell us what you want to take, and we take care of the rest – everything from customs clearance to unpacking in your new home.</p>
+				<p class="third-column" style="display: none;">TPC MOVERS services make the removals process easy, wherever you’re moving to.</p>
+			  <p class="third-column" style="display: none;">For more moving services information or a free cost estimation please contact us.</p>
 			</article>
-
 			<div class="clearfix"></div>
 
 			<img src="http://www.tpcexpress.info/img/tpcexpress-page-logo.jpg" alt="TPC Express page logo" />
@@ -115,6 +117,21 @@
 		<!-- End Second Wraper -->
 
 	</footer>
+
+	<script>
+		function readMore(event) {
+			targetClass = event.target.className;
+			target = document.getElementsByClassName(targetClass);
+
+			for (var i = 0; i < target.length; i++) {
+				if (target[i].style.display === 'inline-block') {
+					target[i].style.display = 'none';
+				} else {
+					target[i].style.display = 'inline-block';
+				}
+			}
+		}
+	</script>
 
 </body>
 
